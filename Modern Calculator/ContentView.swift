@@ -56,7 +56,7 @@ struct ContentView: View {
                             .font(.system(size: 24))
                             .foregroundStyle(.blue)
                             .padding()
-                            .background(.black)
+                            .background(Color(.systemGray2))
                             .cornerRadius(10)
                    }
                 }
@@ -116,7 +116,7 @@ struct ContentView: View {
                             .font(.system(size: 24))
                             .foregroundStyle(.white)
                             .padding()
-                            .background(.black)
+                            .background(Color(.systemGray2))
                             .cornerRadius(10)
                    }
                 }
@@ -244,10 +244,6 @@ struct ContentView: View {
             } catch {
                 resultCalculator = "Error"
             }
-//        let result = try calculateProcess(operatorInput,
-//                                    Double(firstNumberInput) ?? 0.0,
-//                                    Double(secondNumberInput) ?? 0.0)
-//        resultCalculator = formatResult(result)
         firstNumberInput = resultCalculator
         secondNumberInput = ""
         numberInput = ""
@@ -284,7 +280,7 @@ func customBtn<T: CustomStringConvertible>(_ parameter: T) -> some View {
         .font(.system(size: 24))
         .foregroundStyle(.white)
         .padding()
-        .background(.black)
+        .background(Color(.systemGray2))
         .cornerRadius(10)
 }
 
